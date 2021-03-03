@@ -76,6 +76,14 @@ footer {
   display: block;
 }
 
+.main-nav a:hover {
+  opacity: 80%;
+}
+
+a:hover {
+  opacity: 80%;
+}
+
 .profile {
   padding: 1em;
 }
