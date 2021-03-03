@@ -87,7 +87,7 @@ footer {
 .profile-picture {
   border-radius: 50%;
   margin: 1.5em;
-  width: 200px;
+  max-width: 200px;
 }
 
 main h2 {
