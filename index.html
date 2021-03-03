@@ -2,76 +2,111 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Johanes Rama Gusna Sentani's Profile</title>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet" />
+  <title>Portfolio</title>
+  <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <nav class="main-nav">
-    <ul class="nav">
-      <li class="name">Johanes Rama Gusna Sentani</li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="plan.html">Plan</a></li>
-    </ul>
-  </nav>
 
   <header>
-    <img src="images/profile.JPG" alt="My photo" class="profile-image" />
-    <h1 class="tag name">Hello, I’m Rama</h1>
-    <p class="tag location">Tangerang, Banten, Indonesia</p>
+    <div class="main-nav" id="top">
+      <h1>Johanes Rama Gusna Sentani</h1>
+      <nav>
+        <ul>
+          <li><a href="#top">HOME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="profile clearfix">
+      <img class="profile-picture" src="images/profile.JPG" alt="Profile Picture" />
+      <p>
+        Passionate computer science student. Using my free time to learn more about programming, focusing on frontend
+        development. I’ve finished the CS50x course from Harvard University and now doing a frontend web development
+        course at Treehouse. Committed to learn and improve skills in front end development.
+      </p>
+    </div>
   </header>
 
-  <main class="flex">
-    <section class="card">
-      <h2>Background</h2>
-      <p>
-        I’m currently pursuing a bachelor's degree in Computer Science at BINUS University Online Learning. Using my
-        free time to learn more about programming, focusing on frontend development. I’ve finished the CS50x course from
-        Harvard University and now doing a frontend web development course at Treehouse.
-      </p>
-      <p>
-        Another interest I have (besides programming) is coffee. I enjoy the process of brewing coffee. Of course, I
-        enjoy drinking it too.
-      </p>
-    </section>
+  <main>
+    <h2 id="portfolio">Portfolio</h2>
+    <div class="card-container">
+      <section class="card">
+        <img src="images/portofolio/game-show-app-image.png" alt="Image of game show app">
+        <h3>Game Show App</h3>
+        <p>A word guessing game where players will click letters from an onscreen keyboard to try to guess a random
+          phrase.</p>
+        <a href="https://ramasentani.github.io/game-show-app" target="_blank">Open Project</a>
+      </section>
 
-    <section class="card">
-      <h2>Goals</h2>
-      <p>
-        I want to master the process of building web sites and increase my
-        knowledge, skills, and abilities in:
-      </p>
-      <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>React Native</li>
-        <li>Python</li>
-      </ul>
-      <p>
-        I’d like to work as a frontend developer and maybe learn a little
-        bit of full-stack development on the side.
-      </p>
-    </section>
+      <section class="card">
+        <img src="images/portofolio/interactive-photo-gallery-image.png" alt="Image of photo gallery">
+        <h3>Interactive Photo Gallery</h3>
+        <p>Photo gallery with search and lightbox function. Created using JavaScript and CSS Grid.</p>
+        <a href="https://ramasentani.github.io/interactive-photo-gallery" target="_blank">Open Project</a>
+      </section>
+
+      <section class="card break">
+        <img src="images/portofolio/web-style-guide-image.png" alt="Image of web style guide">
+        <h3>Web Style Guide</h3>
+        <p>A style guide that can act as personal and custom Bootstrap that you can drop into any of your
+          projects to speed up styling, layout and development in general.</p>
+        <a href="https://ramasentani.github.io/web-style-guide" target="_blank">Open Project</a>
+      </section>
+
+      <section class="card">
+        <img src="images/portofolio/online-registration-form-image.png" alt="Image of map of online registration form">
+        <h3>Online Registration Form</h3>
+        <p>Responsive, mobile-first registration form using a variety of HTML form elements.</p>
+        <a href="https://ramasentani.github.io/an-online-registration-form" target="_blank">Open Project</a>
+      </section>
+
+      <section class="card">
+        <img src="images/portofolio/personal-profile-page.png" alt="Image of personal profile page">
+        <h3>Personal Profile Page</h3>
+        <p>My personal profile page.</p>
+        <a href="https://ramasentani.github.io/my-personal-profile-page" target="_blank">Open Project</a>
+      </section>
+
+      <section class="card break">
+        <img src="images/portofolio/portfolio-1.png" alt="Image of webapp dashboard">
+        <h3>WebApp Dashboard</h3>
+        <p>A beautiful, web dashboard complete with JavaScript-driven charts and graphs.</p>
+        <a href="https://github.com/RamaSentani/webapp-dashboard" target="_blank">Open Project</a>
+      </section>
+    </div>
   </main>
+
+  <div class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from
+      you!</p>
+    <div class="contact-info">
+      <p>Phone <strong>+62 851 5810 0291</strong></p>
+      <p>Email <strong><a href="mailto:sentanirama@gmail.com">sentanirama@gmail.com</a></strong></p>
+      <p>All of my project is open source</p>
+      <p>Github <strong><a href="https://github.com/RamaSentani" target="_blank">github.com/RamaSentani</a></strong></p>
+    </div>
+  </div>
+
   <footer>
-    <ul>
-      <li>
-        <a href="https://twitter.com/Rama_Sentani" target="_blank" class="social twitter">Twitter</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/ramasentani/" target="_blank" class="social linkedin">LinkedIn</a>
-      </li>
-      <li>
-        <a href="https://github.com/RamaSentani/" target="_blank" class="social github">Github</a>
-      </li>
-    </ul>
-    <p class="copyright">&copy; 2021, Rama Sentani</p>
+    <h3>Rama Sentani</h3>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="top" href="#top">Back to Top</a>
   </footer>
+
 </body>
 
 </html>
