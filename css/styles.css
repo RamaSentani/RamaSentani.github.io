@@ -88,6 +88,7 @@ footer {
   border-radius: 50%;
   margin: 1.5em;
   max-width: 200px;
+  max-height: 200px;
 }
 
 main h2 {
