@@ -60,6 +60,10 @@ footer {
 
 .card {
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: #E9E9E9 solid 1px;
 }
 
 /* Class Selector */
