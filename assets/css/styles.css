@@ -462,7 +462,7 @@ img {
 
 /*==================== CONTACT ME ====================*/
 .contact_container {
-    row-gap: 3rem;
+    justify-content: center;
 }
 
 .contact_information {
@@ -649,7 +649,7 @@ img {
 
     .about_container,
     .portfolio_content,
-    .contact_container,
+    /* .contact_container, */
     .footer_container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -752,6 +752,15 @@ img {
     .portfolio_img {
         width: 320px;
     }
+
+    .contact_box {
+        display: flex;
+    }
+
+    .contact_information {
+        margin: var(--mb-0-75);
+    }
+
 
     .footer_container {
         grid-template-columns: repeat(3, 1fr);
